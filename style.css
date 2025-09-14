@@ -16,25 +16,29 @@ section{
     font-family: "Story Script", sans-serif;
     letter-spacing: 1px;
     word-spacing: 3px;
+    height: 420px;
 }
 .half-width{
     float: left;
     width: 40%;
     height: 350px;
-    margin-left: 5%;
-    padding: 2%;
+    margin-left: 10%;
+    margin-top: 10px;
 }
 .half-width img{
     width: 200px;
     border-radius: 7%;
-    margin-top: 1px;
+    margin-top: 3px;
     margin-left: 100px;
 }
 #batman{
     width: 300px;
-    height: 350px;
-    margin-top: 1px;
+    height: 400px;
+    margin-top: 0;
     margin-left: 30px;
+}
+#dragon{
+    margin-left: 80px;
 }
 .red-highlight{
     color: rgb(119, 55, 68);
@@ -74,7 +78,7 @@ p{
     margin-top: 60px;
 }
 .h-text2{
-    margin-top: 20px;
+    margin-top: 70px;
     font-size: 45px;
 }
 .worked{
