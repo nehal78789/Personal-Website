@@ -25,6 +25,9 @@ section{
     margin-left: 10%;
     margin-top: 10px;
 }
+.bio-txt{
+    margin-left: 20px;
+}
 .half-width img{
     width: 200px;
     border-radius: 7%;
@@ -39,6 +42,8 @@ section{
 }
 #dragon{
     margin-left: 80px;
+    width: 250px;
+    height: 370px;
 }
 .red-highlight{
     color: rgb(119, 55, 68);
@@ -94,5 +99,9 @@ p{
 }
 #box-p{
     color: white;
+    font-size: 12px;
+}
+footer{
+    text-align: center;
     font-size: 12px;
 }
