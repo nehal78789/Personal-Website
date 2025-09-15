@@ -1,107 +1,141 @@
-body{
-    margin: 0;
-     font-family: "Exo 2", sans-serif;
+/* General */
+body {
+  margin: 0;
+  font-family: "Exo 2", sans-serif;
+  color: dimgray;
 }
-section{
-    height: 400px;
+section {
+  padding: 40px 5%;
 }
-.top-header{
-    background-image: url(images/header-bg.png);
-    background-size: contain;
-    word-spacing: 3px;
+
+/* Top Header */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(images/header-bg.png);
+  background-size: cover;
 }
-.biography{
-    background-image: url(images/biography-bg.png);
-    background-size: contain;
-    font-family: "Story Script", sans-serif;
-    letter-spacing: 1px;
-    word-spacing: 3px;
-    height: 420px;
+.half-width {
+  flex: 1;
+  padding: 20px;
 }
-.half-width{
-    float: left;
-    width: 40%;
-    height: 350px;
-    margin-left: 10%;
-    margin-top: 10px;
+#dragon {
+  width: 250px;
+  height: auto;
+  border-radius: 7%;
 }
-.bio-txt{
-    margin-left: 20px;
+
+/* Biography */
+.biography {
+  display: flex;
+  align-items: center;
+  background-image: url(images/biography-bg.png);
+  background-size: cover;
+  font-family: "Story Script", cursive;
 }
-.half-width img{
-    width: 200px;
-    border-radius: 7%;
-    margin-top: 3px;
-    margin-left: 100px;
+#batman {
+  width: 300px;
+  height: auto;
+  border-radius: 7%;
 }
-#batman{
-    width: 300px;
-    height: 400px;
-    margin-top: 0;
-    margin-left: 30px;
+.bio-txt {
+  padding-left: 40px;
 }
-#dragon{
-    margin-left: 80px;
-    width: 250px;
-    height: 370px;
+
+/* Headings */
+.red-highlight {
+  color: rgb(119, 55, 68);
+  font-size: 40px;
 }
-.red-highlight{
-    color: rgb(119, 55, 68);
-    font-size: 40px;
+.blue-highlight {
+  color: #5b6bff;
+  font-size: 25px;
 }
-.blue-highlight{
-    color: #5b6bff;
-    font-size: 25px;
+.h-text {
+  margin-top: 0;
 }
-p{
-    color: dimgray;
+.h-text2 {
+  font-size: 45px;
+  margin-bottom: 20px;
 }
-.link-buttom{
-    text-decoration: none;
-    background-image: linear-gradient(45deg, #ebabab, #3b1414);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 7px;
+
+/* Buttons */
+.link-buttom,
+.link-buttom-2,
+.link-buttom-3 {
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* hover animation */
 }
-.link-buttom-2{
-    text-decoration: none;
-    background-image: linear-gradient(45deg, #ecee86, #ffae00);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 7px;
+.link-buttom {
+  background: linear-gradient(45deg, #ebabab, #3b1414);
+  padding: 10px 20px;
 }
-.link-buttom-3{
-    text-decoration: none;
-    background-image: linear-gradient( #d0e7fd, #0022e6);
-    color: white;
-    padding: 20px 50px;
-    border-radius: 7px;
-    display: inline-block;
-    box-shadow: 10px 10px 40px #8a84e4;
+.link-buttom-2 {
+  background: linear-gradient(45deg, #ecee86, #ffae00);
+  padding: 10px 20px;
 }
-.h-text{
-    margin-top: 60px;
+.link-buttom-3 {
+  background: linear-gradient(#d0e7fd, #0022e6);
+  padding: 20px 50px;
+  box-shadow: 10px 10px 40px #8a84e4;
 }
-.h-text2{
-    margin-top: 70px;
-    font-size: 45px;
+
+/* Button Hover Effect */
+.link-buttom:hover,
+.link-buttom-2:hover,
+.link-buttom-3:hover {
+  transform: scale(1.1);  /* boro hobe */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
-.worked{
-    background-image: url(images/latest-work-bg.png);
-    background-size: cover;
+
+/* Latest Work */
+.worked {
+  background-image: url(images/latest-work-bg.png);
+  background-size: cover;
+  text-align: center;
 }
-#worked{
-    text-align: center;
-    font-size: 30px;
+#worked {
+  font-size: 30px;
+  margin-bottom: 30px;
 }
-.last-sec{
-    text-align: center;
+.work-container {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
 }
-#box-p{
-    color: white;
-    font-size: 12px;
+.ss3 {
+  flex: 1 1 30%;
+  max-width: 300px;
 }
-footer{
-    text-align: center;
-    font-size: 12px;
+.ss3 img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ss3 img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Last Section */
+.last-sec {
+  text-align: center;
+}
+#box-p {
+  color: white;
+  font-size: 12px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 15px 0;
 }
