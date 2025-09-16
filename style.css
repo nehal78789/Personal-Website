@@ -5,7 +5,8 @@ body {
   color: dimgray;
 }
 section {
-  padding: 40px 5%;
+  padding: 50px 15%;
+
 }
 
 /* Top Header */
@@ -53,9 +54,6 @@ section {
   font-size: 25px;
 }
 .h-text {
-  margin-top: 0;
-}
-.h-text2 {
   font-size: 45px;
   margin-bottom: 20px;
 }
@@ -106,12 +104,12 @@ section {
 .work-container {
   display: flex;
   justify-content: center;
-  gap: 0;
+  gap: 10px;
   flex-wrap: wrap;
 }
 .ss3 {
-  flex: 1 1 30%;
-  max-width: 300px;
+  flex: 0 1 30%;
+  min-width: 300px;
 }
 .ss3 img {
   width: 100%;
